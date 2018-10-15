@@ -17,15 +17,6 @@
 		<url>https://bemyeye.com/</url>
 	</organization>
 
-	<settings>
-		<servers>
-			<server>
-				<id>jitpack.io</id>
-				<username>jp_lgh90bmhl8nf62iolatba6b8g</username>
-				<password>.</password>
-			</server>
-		</servers>
-	</settings>
 
 	<properties>
 
