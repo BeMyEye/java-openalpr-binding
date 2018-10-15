@@ -51,3 +51,7 @@ Release/
 
 
 cmake_install.cmake
+/target/
+/.project
+/.classpath
+org.eclipse.*
