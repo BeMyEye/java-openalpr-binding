@@ -17,12 +17,15 @@
 		<url>https://bemyeye.com/</url>
 	</organization>
 
-	<repositories>
-		<repository>
-			<id>jitpack.io</id>
-			<url>https://jitpack.io</url>
-		</repository>
-	</repositories>
+	<settings>
+		<servers>
+			<server>
+				<id>jitpack.io</id>
+				<username>jp_lgh90bmhl8nf62iolatba6b8g</username>
+				<password>.</password>
+			</server>
+		</servers>
+	</settings>
 
 	<properties>
 
@@ -40,14 +43,6 @@
 		<maven-install-plugin.version>2.5.2</maven-install-plugin.version>
 
 	</properties>
-
-	<dependencies>
-		<dependency>
-			<groupId>com.github.error23</groupId>
-			<artifactId>java-openalpr-binding</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
-	</dependencies>
 
 	<build>
 
