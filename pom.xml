@@ -17,6 +17,13 @@
 		<url>https://bemyeye.com/</url>
 	</organization>
 
+	<repositories>
+		<repository>
+			<id>jitpack.io</id>
+			<url>https://jitpack.io</url>
+		</repository>
+	</repositories>
+
 	<properties>
 
 		<!-- General properties -->
@@ -33,6 +40,14 @@
 		<maven-install-plugin.version>2.5.2</maven-install-plugin.version>
 
 	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.github.error23</groupId>
+			<artifactId>java-openalpr-binding</artifactId>
+			<version></version>
+		</dependency>
+	</dependencies>
 
 	<build>
 
