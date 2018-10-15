@@ -4,7 +4,7 @@
 
 	<groupId>com.bemyeye</groupId>
 	<artifactId>java-openalpr-binding</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>test</version>
 	<packaging>jar</packaging>
 
 	<name>java-openalpr-binding</name>
