@@ -45,7 +45,7 @@
 		<dependency>
 			<groupId>com.github.error23</groupId>
 			<artifactId>java-openalpr-binding</artifactId>
-			<version></version>
+			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 	</dependencies>
 
