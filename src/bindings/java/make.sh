@@ -4,8 +4,8 @@
 # gcc 4.2.1
 # openjdk 1.7.0
 
-OPENALPR_INCLUDE_DIR=/storage/projects/alpr/src/openalpr/
-OPENALPR_LIB_DIR=/storage/projects/alpr/src/build/openalpr/
+OPENALPR_INCLUDE_DIR=../../openalpr
+OPENALPR_LIB_DIR=../../openalpr/
 JAVA_PATH=/usr/lib/jvm/java-1.8.0
 
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:.:${OPENALPR_LIB_DIR}

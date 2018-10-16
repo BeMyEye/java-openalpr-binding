@@ -1,20 +1,21 @@
 #############################################################
-# Fichier     :  build_so.sh
+# Fichier     :  install_fedora.sh
 # Auteur      :  ERROR23
 # Email       :  error23.d@gmail.com
 # OS          :  Linux
 # Compilateur :  bash
-# Date        :  15/10/2018
-# Description :  build openAlpr C code
+# Date        :  16/10/2018
+# Description :  installate openalpr on fedora
 #############################################################
 #!/bin/bash
 
-figlet "BeMyEye OpenAlpr Builder"
+
+figlet "FEDORA OPENALPR"
 
 if [ -z $1 ]
 then
 	echo -e "\n"
-	read -n1 -p 'BeMyEye > Do you want to download dependencies with dnf (y/n) ? ' downloadDependencies
+	read -n1 -p 'OpenAlpr > Do you want to download dependencies with dnf (y/n) ? ' downloadDependencies
 else
 	downloadDependencies=$1
 fi
@@ -26,25 +27,15 @@ then
 	sudo dnf install opencv-devel tesseract-devel leptonica-devel git cmake log4cplus-devel libcurl-devel gcc-c++ beanstalkd
 elif [ $downloadDependencies != 'n' ] && [ $downloadDependencies != 'N' ]
 then
-	echo -e "\nBeMyEye > You have to chose between y(es) or n(o)"
+	echo -e "\nOpenAlpr > You have to chose between y(es) or n(o)"
 	exit -1;
 fi
 
-echo -e "\nBeMyEye > Building openAlpr lib"
+echo -e "\nOpenAlpr > Installng openalpr to your system"
 
 cd src
-cmake ../src
+cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_INSTALL_SYSCONFDIR:PATH=/etc ../src
 make
-
-cp openalpr/libopenalpr.so.2 ..
-
-echo -e "\nBeMyEye > [DONE]"
-
-
-echo -e "\nBeMyEye > Building openAlpr JNI lib"
-cd bindings/java/
-`make.sh`
-mv *.so ../../../
-
-echo -e "\nBeMyEye > [DONE]"
+sudo make install
+sudo ldconfig
 
