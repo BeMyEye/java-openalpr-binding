@@ -38,16 +38,7 @@
 	<build>
 
 		<sourceDirectory>src/bindings/java/src/</sourceDirectory>
-		<resources>
-			<resource>
-				<directory>config</directory>
-				<targetPath>config</targetPath>
-			</resource>
-			<resource>
-				<directory>runtime_data/</directory>
-				<targetPath>runtime_data</targetPath>
-			</resource>
-		</resources>
+		
 
 		<plugins>
 			<plugin>
